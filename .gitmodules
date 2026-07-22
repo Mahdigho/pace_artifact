@@ -1,0 +1,15 @@
+[submodule "pace/ext/libmspio"]
+	path = pace/ext/libmspio
+	url = git@github.com:Mahdigho/libmspio.git
+[submodule "pace/ext/libmsp"]
+	path = pace/ext/libmsp
+	url = git@github.com:Mahdigho/libmsp.git
+[submodule "pace/ext/libmspprintf"]
+	path = pace/ext/libmspprintf
+	url = git@github.com:Mahdigho/libmspprintf.git
+[submodule "pace/ext/libmsptimer"]
+	path = pace/ext/libmsptimer
+	url = git@github.com:Mahdigho/libmsptimer.git
+[submodule "pace/tools/maker"]
+	path = pace/tools/maker
+	url = git@github.com:Mahdigho/AbstractMaker.git
