@@ -1,0 +1,4 @@
+#ifndef __CKPT_INTERM_DEFS
+#define __CKPT_INTERM_DEFS
+
+#endif // __CKPT_INTERM_DEFS

@@ -139,6 +139,7 @@ void exp_report() {
   uint16_t slumber_fails = 0;
   // uint16_t timed_slim_fails = 0;
   uint16_t lookup_slex_fails = 0;
+
 #if EPERCEPTIVE
   msp_printf("----------------------\n\r");
   msp_printf("Eperceptive\n\rExit,Fail,Success\n\r[0, %u, %u]\n\r",
@@ -217,10 +218,9 @@ void exp_report() {
       "S7E1,S7E2,S7E3,S8E1,S8E2,S8E3,S9E1,S9E2,S9E3,S10E1,S10E2,S10E3\n\r");
 
 #if EPERCEPTIVE
-  msp_printf(
-      ",,,,CIFAR10,eperceptive,%u,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-      "0,0,0,0,",
-      epercetive_fails);
+  msp_printf(",,,,SPEECH,eperceptive,%u,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+             "0,0,0,0,",
+             epercetive_fails);
   for (uint8_t i = 0; i < MAX_EXIT; i++) {
     msp_printf("%u,", taken_eperceptive[i].succeses);
   }
@@ -228,9 +228,9 @@ void exp_report() {
 #endif
 
 #if TIMED_EE
-  msp_printf(",,,,CIFAR10,sched_ee,%u,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-             "0,0,0,0,",
-             timed_ee_fails);
+  msp_printf(
+      ",,,,SPEECH,sched_ee,%u,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,",
+      timed_ee_fails);
   for (uint8_t i = 0; i < MAX_EXIT; i++) {
     msp_printf("%u,", taken_timed_exit[i].succeses);
   }
@@ -238,7 +238,7 @@ void exp_report() {
 #endif
 
 #if ZYGARDE
-  msp_printf(",,,,CIFAR10,zygarde,%u,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+  msp_printf(",,,,SPEECH,zygarde,%u,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
              "0,0,0,0,0,",
              zygarde_fails);
   for (uint8_t i = 0; i < MAX_EXIT; i++) {
@@ -248,7 +248,7 @@ void exp_report() {
 #endif
 
 #if LOOKUP_SLEX
-  msp_printf(",,,,CIFAR10,lookup_slex,%u,0,0,0,", lookup_slex_fails);
+  msp_printf(",,,,SPEECH,lookup_slex,%u,", lookup_slex_fails);
   for (uint8_t i = 0; i < WIDTH_SIZE; i++) {
     msp_printf("%u,%u,%u,", taken_lookup_slex[i].exit1,
                taken_lookup_slex[i].exit2, taken_lookup_slex[i].exit3);
@@ -257,7 +257,7 @@ void exp_report() {
 #endif
 
 #if SLUMBER
-  msp_printf(",,,,CIFAR10,SLUMBER,%u,0,0,0,", slumber_fails);
+  msp_printf(",,,,SPEECH,SLUMBER,%u,", slumber_fails);
   for (uint8_t i = 0; i < WIDTH_SIZE; i++) {
     msp_printf("%u,%u,%u,", taken_slumber[i].exit1, taken_slumber[i].exit2,
                taken_slumber[i].exit3);
