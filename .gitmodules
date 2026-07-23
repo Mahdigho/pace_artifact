@@ -13,3 +13,15 @@
 [submodule "pace/tools/maker"]
 	path = pace/tools/maker
 	url = git@github.com:Mahdigho/AbstractMaker.git
+[submodule "pace/ext/libfixedAbstract"]
+	path = pace/ext/libfixedAbstract
+	url = git@github.com:Mahdigho/libfixedAbstract.git
+[submodule "pace/ext/libmatAbstract"]
+	path = pace/ext/libmatAbstract
+	url = git@github.com:Mahdigho/libmatAbstract.git
+[submodule "pace/ext/libdsp"]
+	path = pace/ext/libdsp
+	url = git@github.com:Mahdigho/libdsp.git
+[submodule "pace/ext/librng"]
+	path = pace/ext/librng
+	url = git@github.com:Mahdigho/librng.git

@@ -58,8 +58,8 @@ dkms.conf
 
 # Maker
 Makefile.env
-apps/*/bld/
-tools/tools
+pace/apps/*/bld/
+pace/tools/tools
 
 # Project Specific
 .clangd
