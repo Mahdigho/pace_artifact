@@ -34,9 +34,9 @@ LIBS :=
 STATIC_LIBS :=
 
 ifdef STATIC
-STATIC_LIBS += -lboost_filesystem -lboost_system -lbsl430 -lboost_date_time -lboost_chrono -lboost_thread
+STATIC_LIBS += -lboost_filesystem -lboost_system -lbsl430 -lboost_date_time -lboost_chrono
 else
-LIBS += -lboost_filesystem -lboost_system -lbsl430 -lboost_date_time -lboost_chrono -lboost_thread
+LIBS += -lboost_filesystem -lboost_system -lbsl430 -lboost_date_time -lboost_chrono
 endif
 
 LIBTHIRD := ./ThirdParty/lib64
@@ -52,9 +52,9 @@ ifeq ($(PLATFORM),Linux)
 	DEFINES += -DUNIX
 
 	ifdef STATIC
-	STATIC_LIBS += -lusb-1.0
+	STATIC_LIBS += -lusb-1.0 -lboost_thread
 	else
-	LIBS += -lusb-1.0
+	LIBS += -lusb-1.0 -lboost_thread
 	endif
 
 	LIBS += -lusb-1.0 -lrt -lpthread
@@ -77,9 +77,9 @@ else
 	STATICOUTPUT := mac64
 
 	ifdef STATIC
-	STATIC_LIBS += -framework CoreFoundation -framework IOKit -lhidapi
+	STATIC_LIBS += -framework CoreFoundation -framework IOKit -lhidapi -lboost_thread-mt
 	else
-	LIBS += -framework CoreFoundation -framework IOKit -lhidapi
+	LIBS += -framework CoreFoundation -framework IOKit -lhidapi -lboost_thread-mt
 	endif
 
 	ifdef BOOST_DIR

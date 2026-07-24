@@ -58,7 +58,6 @@ Mkfile.old
 dkms.conf
 
 # Maker
-Makefile.env
 pace/apps/*/bld/
 pace/tools/tools
 
