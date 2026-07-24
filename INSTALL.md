@@ -3,6 +3,10 @@
 Once the software requirements in the `REQUIREMENTS.md` file are met, follow these instructions to setup PACE and the testbed. We use the `install.sh` file to install the required dependencies and binaries for Pace locally in a virtual environment. However, some aspects of the setting up the testbed require alternative software or physical actions.
 
 > [!NOTE]
+> Make sure initialize all submodules with `git submodule update --init --recursive`.
+
+
+> [!NOTE]
 > The installation script install everything locally in a python virtual environment, so you'll have to manually activate the environment to use PACE and the testbed.
 
 ## PACE
