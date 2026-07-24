@@ -1,6 +1,7 @@
 #
 .tmp
 .artifact_env
+**/__pycache__/
 #
 #
 # Prerequisites

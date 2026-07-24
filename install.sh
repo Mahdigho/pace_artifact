@@ -209,6 +209,10 @@ uv venv $VENV_NAME
 source $VENV_NAME/bin/activate
 echo "----------------------"
 
+echo "---------Python requirements---------"
+uv pip install -r requirements.txt
+echo "----------------------"
+
 mkdir $TEMP_PATH
 echo "---------Installing Dependencies---------"
 install_libusb || exit 1
