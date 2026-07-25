@@ -30,7 +30,7 @@ Linux or MacOS (Windows is currently not supported).
 
 ### Hardware
 
-- A MSP-EXP430FR5994 board (or ideally two as described in the PACE `INSTALL.md`), refered to generally as the MSP430.
+- A MSP-EXP430FR5994 board, refered to generally as the MSP430.
 - A computer with USB ports to flash and communicate with the MSP430 (via serial communication).
 
 ## TestBed
@@ -43,4 +43,4 @@ The following hardware is required to create PACE's testbed
 - Itsy bitsy M0 (or any circuit python capable MCU with SPI and serial communication) to control the MCP.
 - P2110-EVB kit as the energy harvester.
 - Additional 0.1mF tantalum capacitors to recreate the capacitor decay and tolerance experiments.
-- Wires for connections.
+- Wires for connections and a breadboard.

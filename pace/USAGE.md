@@ -35,6 +35,7 @@ Given an example application `cifar10`, the source files are located in `pace/ap
 3. To change the wakeup and sleep voltages, change values `runtime/include/defs.h`.
 4. To experiment with various baselines and latencies, look at `include/app.h`. If running with ePerceptive style lookup tables, make sure it's calibrated for your capacitor and latency by changing the values in `model_stats.c`
 5. To change how the estimation algorithm works and learns, take a look at `uptime.c` and `include/uptime.h`.
+6. To force the intitial warmup on pace, zero out the lookup table in `uptime.c` and disable the warmup inferences in `app.c`.
 
 ## Calibrating ePerceptive style lookup tables
 
